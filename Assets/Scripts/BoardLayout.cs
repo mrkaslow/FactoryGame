@@ -5,7 +5,6 @@ using Zenject;
 
 public class BoardLayout : IInitializable
 {
-
     private GameAssets _gameAssets;
     private DiContainer _container;
     internal GameObject floor;

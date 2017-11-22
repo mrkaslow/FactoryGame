@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IMoveBehavior
 {
-    void MoveOnLine(Product product);
+    void MoveOnLine(Product product, float speed);
 }
