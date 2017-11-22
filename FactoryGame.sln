@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryGame.Plugins", "FactoryGame.Plugins.csproj", "{2922DE26-E915-4C16-0754-131B73D058B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryGame", "FactoryGame.csproj", "{30ADB87F-CC37-6686-8B72-AEAB4575A5F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryGame.Editor.Plugins", "FactoryGame.Editor.Plugins.csproj", "{CE291B2F-9C60-AECA-9947-64E8D0877CD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2922DE26-E915-4C16-0754-131B73D058B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2922DE26-E915-4C16-0754-131B73D058B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2922DE26-E915-4C16-0754-131B73D058B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2922DE26-E915-4C16-0754-131B73D058B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30ADB87F-CC37-6686-8B72-AEAB4575A5F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30ADB87F-CC37-6686-8B72-AEAB4575A5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30ADB87F-CC37-6686-8B72-AEAB4575A5F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30ADB87F-CC37-6686-8B72-AEAB4575A5F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE291B2F-9C60-AECA-9947-64E8D0877CD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE291B2F-9C60-AECA-9947-64E8D0877CD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE291B2F-9C60-AECA-9947-64E8D0877CD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE291B2F-9C60-AECA-9947-64E8D0877CD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
