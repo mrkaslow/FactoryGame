@@ -229,10 +229,17 @@
     <Compile Include="Assets\Scripts\GameAssets.cs" />
     <Compile Include="Assets\Scripts\GameInstaller.cs" />
     <Compile Include="Assets\Scripts\GameplayHandler.cs" />
+    <Compile Include="Assets\Scripts\ICommand.cs" />
     <Compile Include="Assets\Scripts\IDestroyBehavior.cs" />
     <Compile Include="Assets\Scripts\IJumpBehavior.cs" />
     <Compile Include="Assets\Scripts\IMoveBehavior.cs" />
+    <Compile Include="Assets\Scripts\InputHandler.cs" />
     <Compile Include="Assets\Scripts\LinearMovement.cs" />
+    <Compile Include="Assets\Scripts\MoveDownCommand.cs" />
+    <Compile Include="Assets\Scripts\MoveLeftCommand.cs" />
+    <Compile Include="Assets\Scripts\MoveRightCommand.cs" />
+    <Compile Include="Assets\Scripts\MoveUpCommand.cs" />
+    <Compile Include="Assets\Scripts\Platform.cs" />
     <Compile Include="Assets\Scripts\Product.cs" />
     <Compile Include="Assets\Scripts\ProductSpawner.cs" />
     <Compile Include="Assets\Scripts\RandomProductFactory.cs" />
