@@ -8,6 +8,7 @@ public class ProductSpawner: IInitializable {
 
     readonly Product.Factory _productFactory;
     readonly BoardLayout _board;
+    private int producingLine;
 
     public ProductSpawner(Product.Factory productFactory, BoardLayout board)
     {
@@ -17,15 +18,14 @@ public class ProductSpawner: IInitializable {
 
     public void Initialize()
     {
-        for (int i = 0; i < _board.factoryLines.Count; i++)
-        {
-            GameObject.FindObjectOfType<MonoBehaviour>().StartCoroutine(ExecuteAfterTime(i));
-        }
+        producingLine = 4;
+        GameObject.FindObjectOfType<MonoBehaviour>().StartCoroutine(ExecuteAfterTime());
     }
 
     public void SpawnProduct(int lineNumber)
     {
         Product product = _productFactory.Create();
+        product.lineNumber = lineNumber;
         product.productGO.transform.position = GetStartPosition(product, lineNumber);
     }
 
@@ -39,11 +39,12 @@ public class ProductSpawner: IInitializable {
         return startPosition;
     }
 
-    private IEnumerator ExecuteAfterTime(int lineNumber)
+    private IEnumerator ExecuteAfterTime()
     {
-        float delay = UnityEngine.Random.Range(0, 5);
+        producingLine = UnityEngine.Random.Range(0,3);
+        float delay = UnityEngine.Random.Range(0.5f, 5);
         yield return new WaitForSeconds(delay);
-        SpawnProduct(lineNumber);
-        GameObject.FindObjectOfType<MonoBehaviour>().StartCoroutine(ExecuteAfterTime(lineNumber));
+        SpawnProduct(producingLine);
+        GameObject.FindObjectOfType<MonoBehaviour>().StartCoroutine(ExecuteAfterTime());
     }
 }

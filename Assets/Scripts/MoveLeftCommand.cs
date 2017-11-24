@@ -13,8 +13,6 @@ public class MoveLeftCommand : ICommand
 
     public void Execute()
     {
-        var platformGO = _platform.platformGO;
-        var platformSize = platformGO.GetComponent<MeshRenderer>().bounds.size.x;
-        this._platform.MovePlatform(new Vector3(platformGO.transform.position.x - platformSize, platformGO.transform.position.y, platformGO.transform.position.z));
+        this._platform.MovePlatform(0,-1);
     }
 }

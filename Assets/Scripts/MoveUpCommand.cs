@@ -13,8 +13,6 @@ public class MoveUpCommand : ICommand
 
     public void Execute()
     {
-        var platformGO = _platform.platformGO;
-        var platformSize = platformGO.GetComponent<MeshRenderer>().bounds.size.z;
-        this._platform.MovePlatform(new Vector3(platformGO.transform.position.x, platformGO.transform.position.y, platformGO.transform.position.z+ platformSize));
+        this._platform.MovePlatform(1,0);
     }
 }

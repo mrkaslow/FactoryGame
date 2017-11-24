@@ -234,6 +234,7 @@
     <Compile Include="Assets\Scripts\IJumpBehavior.cs" />
     <Compile Include="Assets\Scripts\IMoveBehavior.cs" />
     <Compile Include="Assets\Scripts\InputHandler.cs" />
+    <Compile Include="Assets\Scripts\IStackable.cs" />
     <Compile Include="Assets\Scripts\LinearMovement.cs" />
     <Compile Include="Assets\Scripts\MoveDownCommand.cs" />
     <Compile Include="Assets\Scripts\MoveLeftCommand.cs" />
@@ -244,8 +245,11 @@
     <Compile Include="Assets\Scripts\ProductSpawner.cs" />
     <Compile Include="Assets\Scripts\RandomProductFactory.cs" />
     <Compile Include="Assets\Scripts\RootInstaller.cs" />
+    <Compile Include="Assets\Scripts\ScoreModel.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\GameAssetsInstaller.cs" />
     <Compile Include="Assets\Scripts\SimpleMovement.cs" />
+    <Compile Include="Assets\Scripts\StockPlatform.cs" />
+    <Compile Include="Assets\Scripts\UIHandler.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
